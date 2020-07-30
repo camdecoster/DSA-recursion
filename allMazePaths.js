@@ -43,9 +43,9 @@ function printArray(arr) {
 
 function findPath(maze, x, y, path = "") {
     let newPath;
-    // printArray(maze);
-    // console.log(`(${x}, ${y})`);
-    // console.log(path);
+    printArray(maze);
+    console.log(`(${x}, ${y})`);
+    console.log(path);
 
     if (x + 1 > maze[0].length || y + 1 > maze.length || x < 0 || y < 0) {
         // Out of bounds
@@ -100,4 +100,4 @@ function findPath(maze, x, y, path = "") {
     return path.slice(0, -1);
 }
 
-findPath(maze, 0, 0);
+findPath(mySmallMaze, 0, 0);
